@@ -5,6 +5,7 @@ import { FileText } from "lucide-react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar"; // Use sidebar layout
 import Index from "./pages/Index.jsx";
+import ProductView from "./pages/ProductView.jsx";
 const queryClient = new QueryClient();
 
 export const navItems = [
@@ -23,7 +24,7 @@ const App = () => {
         <Router>
           <Routes>
             <Route path="/" element={<Layout />}>
-              <Route index element={<Index />} />
+              <Route index element={<ProductView />} />
               {/* Add more routes here as needed */}
             </Route>
           </Routes>
